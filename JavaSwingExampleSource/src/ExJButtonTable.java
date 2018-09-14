@@ -27,10 +27,10 @@ public class ExJButtonTable extends JFrame {
 		super("JButtonTable Example");
 
 		DefaultTableModel dm = new DefaultTableModel();
-//		dm.setDataVector(new Object[][] { { "button 1", "foo" }, { "button 2", "bar" } },
-//				new Object[] { "Button", "String" });
-		dm.setDataVector(null,
-				new Object[] { "String", "Button" });
+		dm.setDataVector(new Object[][] { { "button 1", "foo" }, { "button 2", "bar" } },
+				new Object[] { "Button", "String" });
+//		dm.setDataVector(null,
+//				new Object[] { "String", "Button" });
 
 		JTable table = new JTable(dm);
 		table.getColumn("Button").setCellRenderer(new ButtonRenderer());
